@@ -1,10 +1,12 @@
 import React from 'react';
+import GroceryCart from './components/GroceryCart';
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <GroceryCart />
     </div>
   );
 }
