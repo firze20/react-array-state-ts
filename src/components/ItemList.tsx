@@ -2,12 +2,11 @@ import React from "react";
 
 //props
 
-import {ItemListProps} from './ItemListProps';
+import { ItemListProps } from "./ItemListProps";
 
-export default function ItemList({ items, onItemClick }: ItemListProps)  {
-
-  const handleClick = (event: React.MouseEvent): void => {
-    const item = (event.target as HTMLButtonElement).value;
+export default function ItemList({ items, onItemClick }: ItemListProps) {
+  const handleClick = ({ target }: React.MouseEvent): void => {
+    const item = (target as HTMLButtonElement).value;
     onItemClick(item);
   };
   return (
